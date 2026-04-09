@@ -1,3 +1,23 @@
+# Hand Gesture Analysis Platform
+
+A web application that lets users build and use custom hand gesture recognition models. Users train models on their own gestures by uploading videos, then analyze new videos to generate transcripts of recognized gestures.
+
+## Features
+- Custom gesture training: define gestures by name and upload training videos
+- Model management: create and manage multiple gesture dictionaries per account
+- Video analysis: run a trained model against a video to produce a gesture transcript
+- Transcript history: browse and query saved transcripts with confidence scores
+
+## Tech Stack
+
+|       Layer       |         Technology        |
+| ----------------- | ------------------------- |
+| Frontend          | React (Vite)              |
+| Backend           | Python, FastAPI, Uvicorn  |
+| Machine Learning  | MediaPipe Hand Landmarker |
+| Database          | Oracle DB                 |
+| Auth              | Custom session auth       |
+
 # Project Setup
 
 Please refer to the [sample project setup instructions here](https://www.students.cs.ubc.ca/~cs-304/resources/javascript-oracle-resources/node-setup.html#remote-deploy-item) for more in-depth instructions.
